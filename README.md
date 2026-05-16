@@ -40,8 +40,6 @@ OPENAI_API_KEY="your-api-key-here"
 ```
 ## 📈 Change History Log
 v1.5.0
-Feature Expansion: Added comprehensive tracking metrics for bypassed noise exception filters (allowlist.json).
-
-Performance: Upgraded the volumetric accounting grid to dynamically parse and calculate global DROP/BLOCK and ALLOW/PASS packet flows with zero AI token overhead.
-
-Bug Fixes: Remapped packet extraction parsing arrays to use relative dynamic protocol anchoring (tcp, udp, icmp) to combat variable-length FreeBSD kernel header formatting.
+- Feature Expansion: Added comprehensive tracking metrics for bypassed noise exception filters (allowlist.json).
+- Performance: Upgraded the volumetric accounting grid to dynamically parse and calculate global DROP/BLOCK and ALLOW/PASS packet flows with zero AI token overhead.
+- Bug Fixes: Remapped packet extraction parsing arrays to use relative dynamic protocol anchoring (tcp, udp, icmp) to combat variable-length FreeBSD kernel header formatting.
