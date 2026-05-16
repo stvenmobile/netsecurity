@@ -1,0 +1,11 @@
+# Environments and caches
+.venv/
+__pycache__/
+.env
+
+# Generated Deliverables
+*.pdf
+
+# Local Databases and Analytics Storage Matrices
+vector_db/
+data/

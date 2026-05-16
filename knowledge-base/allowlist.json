@@ -1,0 +1,38 @@
+{
+  "allowlist": [
+    {
+      "name": "Bose Cloud Sync",
+      "src_ip_prefix": ["54.", "44."],
+      "dest_ip": "192.168.1.186",
+      "event_type": "anomaly",
+      "reason": "Known Bose MQTT/AWS heartbeat baseline."
+    },
+    {
+      "name": "Bose WAN Reflection",
+      "src_ip_prefix": ["54.", "44."],
+      "dest_ip": "136.57.238.135",
+      "event_type": "anomaly",
+      "reason": "Known Bose MQTT/AWS heartbeat reflecting off WAN IP."
+    },
+    {
+      "name": "Internal Management (SSH)",
+      "src_ip": "192.168.1.1",
+      "dest_ip": "192.168.1.150",
+      "dest_port": [22, 2222],
+      "reason": "Authorized router-to-server management."
+    },
+    {
+      "name": "WSL2 Log Transport",
+      "src_ip": "136.57.238.135",
+      "dest_ip": "172.20.227.5",
+      "dest_port": [22, 2222],
+      "reason": "Authorized log push via WAN reflection."
+    },
+    {
+      "name": "Standard Outbound Web Egress",
+      "event_type": "firewall",
+      "dest_port": [80, 443],
+      "reason": "Standard application traffic managed via local firewall rules."
+    }
+  ]
+}
