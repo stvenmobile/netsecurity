@@ -3,17 +3,16 @@
 Use this file to map your static network identities. The AI SOC parsing engine cross-references this dictionary to replace raw IP fields with deterministic hostnames in your final security reports.
 
 ## System Interfaces & Core Posture
-- 136.58.228.115: **Public WAN IP Boundary**
-- 172.20.227.5: **Quantum Analytics Node** (WSL2 Engine)
+- 136.57.238.135: WAN_Boundary
+- 172.20.227.5: Quantum_PC
 
 ## Local Area Network (LAN) Baseline Assets
-- 192.168.1.1: **OPNsense Core Gateway**
-- 192.168.1.10: **Proxmox VE Hypervisor Host**
-- 192.168.1.50: **Primary Network Attached Storage (NAS)**
-- 192.168.1.100: **Pi-hole Core DNS Resolver**
+- 192.168.1.1: OPNsense_Gateway
+- 192.168.1.10: Proxmox_Host
+- 192.168.1.50: Core_NAS
+- 192.168.1.100: PiHole_DNS
 
 ## Device Subnets & Isolated Segments
-- 192.168.1.150: **Workstation Desktop**
-- 192.168.1.185: **Sample Mobile Smart Device**
-- 192.168.1.186: **Sample Smart Home Media Device**
-EOF
+- 192.168.1.150: Dev_Workstation
+- 192.168.1.185: IoT_SmartPlug
+- 192.168.1.186: IoT_MediaStreamer
