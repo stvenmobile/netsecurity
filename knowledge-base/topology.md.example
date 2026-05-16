@@ -1,6 +1,3 @@
-cd ~/netsecurity/knowledge-base
-
-cat << 'EOF' > topology.md.example
 # Network Topology Mapping Template
 
 Use this file to map your static network identities. The AI SOC parsing engine cross-references this dictionary to replace raw IP fields with deterministic hostnames in your final security reports.
