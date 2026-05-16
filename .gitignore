@@ -9,3 +9,4 @@ __pycache__/
 # Local Databases and Analytics Storage Matrices
 vector_db/
 data/
+knowledge-base/topology.md

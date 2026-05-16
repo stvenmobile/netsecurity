@@ -1,0 +1,22 @@
+cd ~/netsecurity/knowledge-base
+
+cat << 'EOF' > topology.md.example
+# Network Topology Mapping Template
+
+Use this file to map your static network identities. The AI SOC parsing engine cross-references this dictionary to replace raw IP fields with deterministic hostnames in your final security reports.
+
+## System Interfaces & Core Posture
+- 136.58.228.115: **Public WAN IP Boundary**
+- 172.20.227.5: **Quantum Analytics Node** (WSL2 Engine)
+
+## Local Area Network (LAN) Baseline Assets
+- 192.168.1.1: **OPNsense Core Gateway**
+- 192.168.1.10: **Proxmox VE Hypervisor Host**
+- 192.168.1.50: **Primary Network Attached Storage (NAS)**
+- 192.168.1.100: **Pi-hole Core DNS Resolver**
+
+## Device Subnets & Isolated Segments
+- 192.168.1.150: **Workstation Desktop**
+- 192.168.1.185: **Sample Mobile Smart Device**
+- 192.168.1.186: **Sample Smart Home Media Device**
+EOF
